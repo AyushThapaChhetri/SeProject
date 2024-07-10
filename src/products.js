@@ -17,5 +17,13 @@ export const Products =[
         category:'Away',
         productImage:"barca_classic.jpg",
         favourite:false
+    },
+    {
+        id:3,
+        productName:"Bayern Home",
+        price:1000,
+        category:'Away',
+        productImage:"bayern_home.jpg",
+        favourite:false
     }
 ]

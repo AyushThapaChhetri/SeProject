@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../App.css'
+import '../Css/Slider.css'
 
 
 function AutoPlay() {
@@ -35,26 +35,26 @@ function AutoPlay() {
   };
 
   return (
-    <div className="asd1">
-      <Slider {...settings}>
-        <div id="asd1">
-          <h3>1</h3>
-        </div>
-        <div id="asd1">
-          <h3>2</h3>
-        </div>
-        <div id="asd1">
-          <h3>3</h3>
-        </div>
-        <div id="asd1">
-          <h3>4</h3>
-        </div>
-        <div id="asd1">
-          <h3>5</h3>
-        </div>
-        <div id="asd1">
-          <h3>6</h3>
-        </div>
+    <div className="ass">
+      <Slider {...settings} className="asd1">
+          <div id="asd1">
+            <img className="pic" src="4.jpg"/>
+          </div>
+          <div id="asd1">
+            <img className="pic" src="1.jpg"/>
+          </div>
+          <div id="asd1">
+            <img className="pic" src="2.jpg"/>
+          </div>
+          <div id="asd1">
+            <img className="pic" src="3.jpg"/>
+          </div>
+          <div id="asd1">
+            <img className="pic" src="5.jpg"/>
+          </div>
+          <div id="asd1">
+            <img className="pic" src="6.jpg"/>
+          </div>
       </Slider>
     </div>
   );
