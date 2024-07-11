@@ -37,6 +37,10 @@
 }
 
 .shop-btn:hover{
-    background-color: #868686;
+    background-color: #015712;
+    color: white;
+    box-shadow: .35rem .35rem black;
+    transition: all 0.2s ease-out
+
 }
 
