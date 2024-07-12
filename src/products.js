@@ -7,7 +7,8 @@ export const Products =[
         price:1200,
         category:'Home',
         productImage:"/real_home.jpg",
-        favourite:true
+        favourite:true,
+        description:"lorem"
 
     },
     {

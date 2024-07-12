@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import '../Css/Card.css'
 import {shopContext} from "../context/shopContext"
+import { Link } from "react-router-dom";
 
 
 export default function Card(props){
@@ -20,9 +21,10 @@ export default function Card(props){
                             <p className="product-description">{category}</p>
                             <p className="product-price">Rs. {price}</p>
                             <div className="action-buttons">
-                                <button>Details</button>
-                                <button onClick={()=>addToCart(id)}>Add to cart {cartItemAmount>0 && <>({cartItemAmount})</>} </button>
-                                
+                            <Link to="/desc" state={{ product: props.data }}>
+                                <button>More Info</button>
+                            </Link>
+                            <button onClick={()=>addToCart(id)}>Add to cart {cartItemAmount>0 && <>({cartItemAmount})</>} </button>
                             </div>
                     </div>
                 </div>

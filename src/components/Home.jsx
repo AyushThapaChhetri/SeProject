@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom";
-// import Carousel from "./Carousel";
 import SimpleSlider from "./SimpleSlider";
 import "../Css/Home.css" 
 
@@ -11,13 +10,12 @@ function Home() {
         <div className="home-main"> 
             <div className="home-title">
                 <p>
-                    Welcome to HamroJerseys!
+                    Welcome to <span id="title-text">HamroJerseys</span>
                 </p>
             </div>
-            
-    
             <p className="home-desc">
-                Discover top-tier football kits for every fan. From the classics to the latest, we've got your team spirit covered.
+                Discover top-tier football kits for every fan. 
+                From the classics to the latest, we've got your team spirit covered.
                 <br/>Shop at HamroJerseys - where every kit tells a story!
             </p>
             <Link to="/shop">
@@ -29,6 +27,10 @@ function Home() {
             </Link>
         </div>
         <SimpleSlider/>
+        <div>
+            about<br/>
+            footer
+        </div>
       </>
     );
   };

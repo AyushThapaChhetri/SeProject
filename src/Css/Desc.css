@@ -1,0 +1,58 @@
+.desc-main{
+    /* border: 1px solid; */
+    margin:3.5rem;
+    display: flex;
+    justify-items: center;
+}
+
+.desc-main>div{
+    /* border: 1px solid; */
+    margin: 1rem;
+    width: 50%;
+}
+
+.desc-img{
+    width:100%;
+}
+
+.desc-sub-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.desc-title{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom:.75rem ;
+}
+
+.desc-category{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#3A4D39;
+}
+
+.desc-desc{
+    font-size: 1.25rem;
+    margin: .5rem 0rem;
+    font-weight: 300
+}
+
+.desc-price{
+    font-size: 1.75rem;
+    margin: .5rem 0rem;
+    color:#3A4D39;
+    font-weight: 500;
+}
+
+.desc-buttons{
+    display: flex;
+    margin: .5rem 0rem;
+}
+
+.desc-buttons>*{
+    margin: .2rem;
+    padding: .5rem;
+}
