@@ -26,5 +26,13 @@ export const Products =[
         category:'Away',
         productImage:"bayern_home.jpg",
         favourite:false
+    },
+    {
+        id:4,
+        productName:"Csit 2020 Adarsh",
+        price:1500,
+        category:'Home',
+        productImage:"adarsh.jpg",
+        favourite:false
     }
 ]
