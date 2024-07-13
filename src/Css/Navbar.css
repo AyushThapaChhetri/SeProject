@@ -30,6 +30,7 @@ ul li {
     margin: 1.25rem; /* Convert 10px to rem */
     font-size: 1.4rem; /* Convert 18px to rem */
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-links>li:hover{

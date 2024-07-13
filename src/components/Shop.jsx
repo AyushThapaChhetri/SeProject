@@ -63,9 +63,9 @@ export default function Shop() {
                     <Card key={product.id} data={product} />
                 ))}
             </div>
-            <Link to="/cart">
+            {/* <Link to="/cart">
                 <button>cart</button>
-            </Link>
+            </Link> */}
             <Link to="/favs">
                 <button>favs</button>
             </Link>

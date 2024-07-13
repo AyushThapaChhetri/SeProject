@@ -1,101 +1,41 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider} from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
-import NotFound from './components/NotFoundPage';
 import Shop from './components/Shop';
-import Cart from "./components/Cart";
-import Navbar from './components/Navbar'
-import Desc from './components/Desc'
-import Footer from './components/Footer'
+import Cart from './components/Cart';
+import Desc from './components/Desc';
+import Footer from './components/Footer';
+import NotFound from './components/NotFoundPage';
+// import About from './components/About';
+// import Contact from './components/Contact';
+// import Favorites from './components/Favorites';
+// import Profile from './components/Profile';
 
-
-import { ShopContextProvider } from './context/shopContext'; 
+import { ShopContextProvider } from './context/shopContext';
 
 function App() {
-
-  const current_theme=localStorage.getItem('current_theme');
-  const[theme,setTheme]=useState(current_theme?current_theme:'light');
-  useEffect(()=>{
-    localStorage.setItem('current_theme',theme);
-  },[theme])
-
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-      errorElement: <NotFound />
-    },
-    {
-      path: "/shop",
-      element: <Shop />,
-    },
-    {
-      path: "/cart",
-      element: <Cart />,
-    },
-    {
-      path: "/desc",
-      element: <Desc />,
-    }
-    
-  ]);
-
   return (
-    <ShopContextProvider> 
-      <>
-      {/* <div className={`container ${theme}`}> */}
-        <Navbar theme={theme} setTheme={setTheme}/>
-      {/* </div> */}
-        <RouterProvider router={router}>
+    <ShopContextProvider>
+      <Router>
+        <div className="App">
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/cart" element={<Desc />} />
+            <Route path="/desc" element={<Desc />} />
+            <Route path="/about" element={<NotFound />} />
+            <Route path="/contact" element={<NotFound />} />
+            <Route path="/favorites" element={<NotFound />} />
+            <Route path="/profile" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </RouterProvider>
-        <Footer/>
-      </>
+          <Footer />
+        </div>
+      </Router>
     </ShopContextProvider>
   );
 }
 
 export default App;
-
-
-// app.jsx
-
-// import React, { createContext, useState } from "react";
-// import { BrowserRouter, Routes, Route, createBrowserRouter,RouterProvider} from "react-router-dom";
-
-// import Home from './components/Home'
-// import NotFound from './components/NotFoundPage'
-// import Shop from './components/Shop'
-// import { shopContextProvider } from './context/shopContext';
-
-// function App() {
-//   //const [count, setCount] = useState(0)
-//   const router = createBrowserRouter([{
-//     path:"/",
-//     element:<Home/>,
-//     errorElement:<NotFound/>
-//   },
-//   {
-//     path:"/shop",
-//     element:<Shop/>,
-//   }
-//   ]);
-
-//   return (
-//     <shopContextProvider>
-//       <>
-//         {/* <Navbar/> */}
-//         <RouterProvider router={router}/>
-//       </>
-//     </shopContextProvider>
-      
-//   )
-// }
-
-// export default App
