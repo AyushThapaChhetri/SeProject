@@ -43,20 +43,23 @@ export default function Shop() {
     };
 
     return (
-        <>
-            <input
-                onChange={event => setSearchTerm(event.target.value)}
-                type="text"
-                className="search-box"
-                placeholder="Search products..."
-            />
-            <button onClick={toggleAwayFilter}>
-                {filters.includes("Away") ? "Remove Away" : "Add Away"}
-            </button>
+        <>  
+            <div className="cart-options">
+                <input
+                    onChange={event => setSearchTerm(event.target.value)}
+                    type="text"
+                    className="search-box"
+                    placeholder="Search products."
+                />
+                <button onClick={toggleAwayFilter} class="filters">
+                    {filters.includes("Away") ? "Remove Away" : "Add Away"}
+                </button>
 
-            <button onClick={toggleHomeFilter}>
-                {filters.includes("Home") ? "Remove Home" : "Add Home"}
-            </button>
+                <button onClick={toggleHomeFilter} class="filters">
+                    {filters.includes("Home") ? "Remove Home" : "Add Home"}
+                </button>
+            </div>
+            
 
             <div className="shop">
                 {filterProducts().map(product => (
