@@ -43,7 +43,7 @@ export default function Shop() {
     };
 
     return (
-        <>  
+        <div className="shop-main">
             <div className="cart-options">
                 <input
                     onChange={event => setSearchTerm(event.target.value)}
@@ -72,6 +72,6 @@ export default function Shop() {
             <Link to="/favs">
                 <button>favs</button>
             </Link>
-        </>
+        </div> 
     );
 }
