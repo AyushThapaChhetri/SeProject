@@ -26,20 +26,21 @@
   .product-title {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin:.1rem .75rem;
   }
   
   /* Product price styling */
   .product-price {
     font-size: 1.1rem;
     color: #e74c3c; /* Red color for price */
-    margin-bottom: 15px;
+    margin:.1rem .75rem;
   }
   
   /* Product description styling */
   .product-description {
     font-size: 0.9rem;
     color: #555;
+    margin:.1rem .75rem;
     line-height: 1.5;
   }
   

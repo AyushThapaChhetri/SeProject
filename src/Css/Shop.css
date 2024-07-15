@@ -48,3 +48,15 @@
     margin: 0rem .5rem;
 }
 
+.proceed{
+    padding: 0.6rem 1.25rem; 
+    border-radius: 3rem;
+    border:solid #4F6F52;
+    margin:2rem 5rem;
+}
+
+.proceed:hover{
+    background-color: #4F6F52;
+    color: #ECE3CE;
+}
+

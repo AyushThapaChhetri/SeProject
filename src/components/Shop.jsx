@@ -66,12 +66,12 @@ export default function Shop() {
                     <Card key={product.id} data={product} />
                 ))}
             </div>
-            {/* <Link to="/cart">
-                <button>cart</button>
-            </Link> */}
-            <Link to="/favs">
-                <button>favs</button>
+            <Link to="/cart">
+                <button className="proceed">Proceed to Checkout </button>
             </Link>
+            {/* <Link to="/favs">
+                <button>favs</button>
+            </Link> */}
         </div> 
     );
 }

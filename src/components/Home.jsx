@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import SimpleSlider from "./SimpleSlider";
+import About from "./About";
 import "../Css/Home.css" 
 
 
@@ -27,10 +28,7 @@ function Home() {
             </Link>
         </div>
         <SimpleSlider/>
-        <div>
-            about<br/>
-            footer
-        </div>
+        <About/>
       </>
     );
   };

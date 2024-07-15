@@ -26,7 +26,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/desc" element={<Desc />} />
             <Route path="/about" element={<NotFound />} />
-            <Route path="/contact" element={<NotFound />} />
+            <Route path="/footer" element={<NotFound />} />
             <Route path="/favorites" element={<NotFound />} />
             <Route path="/profile" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />

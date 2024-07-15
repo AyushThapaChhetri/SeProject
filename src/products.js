@@ -7,7 +7,8 @@ export const Products=
         price: 1000,
         category: 'Home',
         productImage: 'bayern_home.jpg',
-        favourite: false
+        favourite: false,
+        description: "This beautiul jersey with its iconic red and golden stripes. When you look at this kit it reminds you of that time when Bayern broke Madridistas hearts"
     },
     {
         id: 17,
@@ -16,7 +17,7 @@ export const Products=
         category: 'Away',
         productImage: 'portugal.png',
         favourite: true,
-        description: 'lorem'
+        description: "The Nike Portugal 2024 away shirt boasts a design closely connected to Portugal's history. The kit features an all-over graphic with an Azulejo-style pattern that has a grungy effect to it. Azulejo is a form of Portuguese and Spanish tin-glazed ceramic tilework. It is usually used for decorating walls and floors and is known for its bright colors and intricate designs."
     },
     {
         id: 5,
@@ -25,7 +26,7 @@ export const Products=
         category: 'Home',
         productImage: 'ac_milan.jpg',
         favourite: true,
-        description: 'lorem'
+        description: 'The classic red and black Milano shirt. Legendary!'
     },
     {
         id: 19,
@@ -33,7 +34,8 @@ export const Products=
         price: 1000,
         category: 'Away',
         productImage: 'spain.jpg',
-        favourite: false
+        favourite: false,
+        description: 'The iconic Spanish away kit from 2010. Brings back memory of South Africa and how the spanish conquered teh world.'
     },
     {
         id: 9,
@@ -42,7 +44,7 @@ export const Products=
         category: 'Home',
         productImage: 'brazil.jpg',
         favourite: true,
-        description: 'lorem'
+        description: 'The bright yellow brazilian kit during their heydays. Samba and Joga Bonito nothing else.'
     },
     {
         id: 2,
@@ -50,7 +52,8 @@ export const Products=
         price: 1000,
         category: 'Home',
         productImage: 'barca_classic.jpeg',
-        favourite: false
+        favourite: false,
+        description: 'This beautiful kit with blauguarana colors.'
     },
     {
         id: 11,
@@ -58,7 +61,8 @@ export const Products=
         price: 1000,
         category: 'Away',
         productImage: 'england.jpg',
-        favourite: false
+        favourite: false,
+        description: 'This beautiful navy blue kit with striking golden colorway.'
     },
     {
         id: 14,
@@ -66,7 +70,8 @@ export const Products=
         price: 1000,
         category: 'Home',
         productImage: 'juve.jpg',
-        favourite: false
+        favourite: false,
+        description: 'This beautiful Bianconeri kit with the iconic black and white colors.'
     },
     {
         id: 18,
@@ -74,7 +79,9 @@ export const Products=
         price: 1000,
         category: 'Away',
         productImage: 'real_away.jpg',
-        favourite: false
+        favourite: false,
+        description: 'This beautiful kit reminds me of one man and how he scored a goal so good even the opponents stood and applauded his greatness.'
+
     },
     {
         id: 8,
@@ -82,7 +89,8 @@ export const Products=
         price: 1500,
         category: 'Away',
         productImage: 'arsenal.jpg',
-        favourite: false
+        favourite: false,
+        description: 'This beautiful kit with green and blue colorway.'
     },
     {
         id: 16,
@@ -90,7 +98,8 @@ export const Products=
         price: 1500,
         category: 'Home',
         productImage: 'france.png',
-        favourite: false
+        favourite: false,
+        description: "A beautiful French kit with the French colors."
     },
     {
         id: 4,
@@ -98,7 +107,8 @@ export const Products=
         price: 1500,
         category: 'Home',
         productImage: 'adarsh.jpg',
-        favourite: false
+        favourite: false,
+        description:"A collector's item. The rarest among all of the kits in the store. Worn by the little magician himself."
     },
     {
         id: 7,
@@ -114,7 +124,8 @@ export const Products=
         price: 1500,
         category: 'Away',
         productImage: 'france_retro.png',
-        favourite: false
+        favourite: false,
+        description:'Elegance and magical. Two words that describe this kit just like the legend who made it iconic.'
     },
     {
         id: 6,
@@ -122,7 +133,8 @@ export const Products=
         price: 1000,
         category: 'Home',
         productImage: 'arg.jpg',
-        favourite: false
+        favourite: false,
+        description:'This kit is a symbol of perserverence and how one man finally achieved his goal of bringing glory to his nation after multiple near misses.'
     },
     {
         id: 15,
@@ -130,7 +142,8 @@ export const Products=
         price: 1000,
         category: 'Home',
         productImage: 'liverpool.png',
-        favourite: false
+        favourite: false,
+        description:'Symbolic with that comeback and that miracle of Istanbul.'
     },
     {
         id: 20,
@@ -138,7 +151,8 @@ export const Products=
         price: 1500,
         category: 'Home',
         productImage: 'united.jpg',
-        favourite: false
+        favourite: false,
+        description:'Brings back memories of when the world took notice of a certain Portugese, who would dominate football for the next decade or so.'
     },
     {
         id: 10,
@@ -146,7 +160,8 @@ export const Products=
         price: 1000,
         category: 'Home',
         productImage: 'croatia.jpg',
-        favourite: false
+        favourite: false,
+        description:"Iconic Croatian checkers pattern. The time they almost conquered the world."
     },
     {
         id: 13,
@@ -155,7 +170,7 @@ export const Products=
         category: 'Home',
         productImage: 'ger.jpg',
         favourite: true,
-        description: 'lorem'
+        description: 'Memories of Brazil and how they broke Argentinian hearts and demoslished the Brazillians.'
     },
     {
         id: 1,
@@ -164,6 +179,6 @@ export const Products=
         category: 'Home',
         productImage: '/real_home.jpg',
         favourite: true,
-        description: 'lorem'
+        description: 'Reminds me of when an Englishman lit up the Spanish capital. Na na na nananana, nannana.'
     }
 ]

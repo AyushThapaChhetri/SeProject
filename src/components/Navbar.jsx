@@ -14,7 +14,7 @@ const Navbar = () => {
         <li><Link to="/" style={{ textDecoration: 'none',color: '#ECE3CE' }}>Home</Link></li>
         <li><Link to="/shop" style={{ textDecoration: 'none' ,color: '#ECE3CE'}}>Products</Link></li>
         <li><Link to="/about" style={{ textDecoration: 'none',color: '#ECE3CE' }}>About</Link></li>
-        <li><Link to="/contact" style={{ textDecoration: 'none' ,color: '#ECE3CE'}}>Contacts</Link></li>
+        <li><Link to="/footer" style={{ textDecoration: 'none' ,color: '#ECE3CE'}}>Contacts</Link></li>
       </ul>
       <div className='icons-nav'>
         <Link to="/favorites" className='logo'>
