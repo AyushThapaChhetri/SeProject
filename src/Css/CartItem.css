@@ -1,0 +1,59 @@
+.cart{
+    border: .15rem solid black;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #ECE3CE;
+    justify-content: space-around;
+ 
+}
+
+.cart>div{
+    padding: .5rem;
+    margin:.5rem
+}
+
+.cartImage{
+    width:150px;
+}
+
+.count{
+    display: flex;
+    align-items: center;
+}
+
+#count-elem{
+    margin:.25rem;
+}
+
+#cartDetails-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3A4D39;
+}
+
+#cartDetails-price{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(75, 167, 252);
+}
+
+.rounded-button {
+    border-radius: 50%; /* Makes the button round */
+    width: 40px;       /* Set the width */
+    height: 40px;      /* Set the height */
+    border: none;      /* Remove default border */
+    background-color:  #3A4D39; /* Button background color */
+    color: white;      /* Button text color */
+    font-size: 1.5rem;
+    font-weight: 400;   /* Text size */
+    display: flex;     /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text */
+    cursor: pointer;   /* Change cursor to pointer */
+  }
+  
+  .rounded-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+  }
+  

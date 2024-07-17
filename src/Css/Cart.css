@@ -1,3 +1,23 @@
-.cart{
-    border:1px solid;
+.checkout{
+    border:.5rem solid #3A4D39;
+    width:50%;
+    margin: 2rem;
+}
+
+.checkout-title{
+    margin:1rem;
+    color:  #3A4D39;
+}
+
+.checkout-main{
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-total{
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin: 0rem 2rem 3rem 2rem;
 }

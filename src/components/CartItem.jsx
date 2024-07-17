@@ -1,6 +1,8 @@
 import React from 'react'
 import { shopContext } from '../context/shopContext'
 import { useContext } from 'react';
+import '../Css/CartItem.css';
+
 
 
 function CartItem(props) {
@@ -9,16 +11,21 @@ function CartItem(props) {
 
 
   return (
-    <div className='card'>
-        <img src={productImage} alt />
-        <p>{id}</p>
-        <p>{productName}</p>
-        <p>{category}</p>
-        <p>{price}</p>
+    <div className='cart'>
+      <div >
+        <img className="cartImage" src={productImage} alt />
+      </div>
+      <div className="cartDetails">
+        {/* <p id="cartDetails-id">{id}</p> */}
+        <p id="cartDetails-title">{productName}</p>
+        <p id="cartDetails-cat">{category}</p>
+        <p id="cartDetails-price">Rs. {price}</p>
+      </div>
+        
         <div className='count'>
-          <button onClick={()=>addToCart(id)}>+</button>
-            <p>{cartItems[id]}</p>
-          <button onClick={()=>removeFromCart(id)}>-</button>
+          <button className="rounded-button" id="count-elem" onClick={()=>addToCart(id)}>+</button>
+          <p id="count-elem">{cartItems[id]}</p>
+          <button className="rounded-button" id="count-elem" onClick={()=>removeFromCart(id)}>-</button>
           {/* delete button */}
         </div>
     </div>

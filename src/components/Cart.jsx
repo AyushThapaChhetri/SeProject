@@ -3,27 +3,35 @@ import { useContext } from 'react';
 import { Products } from '../products'
 import { shopContext } from '../context/shopContext'
 import CartItem from './CartItem';
+import '../Css/Cart.css';
+
 
 export default function Cart() {
   const {getTotal,cartItems} =useContext(shopContext); 
   
     return (
-        <div className='cart'>
-        <div>
-            <h1>Your List</h1>
-        </div>
-            <div className='cart-items'>
-                {Products.map((product) => {
-                if (cartItems[product.id] > 0) {
-                    return <CartItem data={product} />;
-                }
-                })}
+        <>
+            <div className='checkout-main'>
+                <div className='checkout'>
+                    <div className='checkout-title'>
+                        <h1>Your Cart</h1>
+                    </div>
+                    <div className='checkout-items'>
+                        {Products.map((product) => {
+                        if (cartItems[product.id] > 0) {
+                            return <CartItem data={product} />;
+                        }
+                        })}
+                    </div>  
+                </div>
             </div>
-            <div className='checkout'>
-                <p>Total:${getTotal()}</p>
+            <div className='checkout-total'>
+                <p>Total: Rs.{getTotal()}</p>
+                <button>Push to checkout</button>
                 {/* display message if no item in cart */}
                 {/* continue shopping button */}
             </div>
-        </div>
+        </>
+        
     );
     }
