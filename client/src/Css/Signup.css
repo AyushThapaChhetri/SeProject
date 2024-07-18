@@ -1,0 +1,83 @@
+/* Outer container */
+.Outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Inner signup container */
+.Outer-Signup {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Signup heading */
+.signup-head {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Form fields */
+.name,
+.email,
+.password {
+    margin-bottom: 1rem;
+}
+
+.signup-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Signup button */
+.signup-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Additional text */
+.signup-para {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Login link */
+.login-btn {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    text-decoration: underline;
+}
